@@ -1,0 +1,62 @@
+  body {background-color: grey;}
+
+     button {
+     background-color: greenyellow;
+     border: 1px solid black;
+     border-radius: 4px;
+     color: black;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+}
+
+.Uudelleen {display: inline-block;
+  border-radius: 4px;
+  background-color: cyan;
+  border: 1px solid black;;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 32px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 4px 2px;}
+
+  .Uudelleen span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Uudelleen span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.Uudelleen:hover span {
+  padding-right: 25px;
+}
+
+.Uudelleen:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+input[type=text] {
+  width: 35px;
+  padding: 5px 5px;
+  margin: 8px 5px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+}
