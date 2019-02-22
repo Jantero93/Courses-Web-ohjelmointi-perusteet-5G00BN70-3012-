@@ -3,10 +3,7 @@
 
 <head>
 
-    <style>
-
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="theme.css">
 
     <meta charset="UTF-8">
 
@@ -88,6 +85,7 @@
 </head>
 
 <body onload="laskut()">
+
     <h1> Tervetuloa laskemaan!</h1>
     <p>Laske seuraavat laskut:</p>
     <label id="lasku1">3 x 5</label><input type="text" id="vastaus1" size=2> <label id="palaute1"></label><input type="hidden"
@@ -97,8 +95,11 @@
     <label id="lasku3">7 x 5</label><input type="text" id="vastaus3" size=2> <label id="palaute3"></label><input type="hidden"
         id="oikea3"> <br>
 
-    <button onclick="tarkista()">Tarkista</button><button onclick="uudelleen()">Uudelleen</button><br>
+    <button onclick="tarkista()">Tarkista</button><button class="Uudelleen" onclick="uudelleen()"><span>Uudelleen</span></button><br>
     <label id="palaute"></label>
+
+    <img src="kekkonen.png" align="right" />
+
 </body>
 
 </html>
