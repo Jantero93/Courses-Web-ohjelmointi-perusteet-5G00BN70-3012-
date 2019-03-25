@@ -11,11 +11,15 @@ $(document).ready(function () {
 
     $("#last_values").click(function (e) {
         $("#title_div").html("<h1>Last 500 measurements</h1>")
+        $("#chart_div").hide()
         printLatestData(api);
     });
 
     $("#temperature").click(function (e) {
         $("#title_div").html("<h1>Temperature</h1>")
+        $("#data_div").html("")
+        $("#chart_div").show()
+        drawTemperatureData(api);
     });
 
     $("#humidity_out").click(function (e) {
