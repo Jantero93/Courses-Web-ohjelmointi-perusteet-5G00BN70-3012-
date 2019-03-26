@@ -6,14 +6,16 @@ var drawTemperatureData = function(api) {
       console.log(result);
       let labels = [];
       let data = [];
-
+     
       for (let i = 0; i < result.length; i++){
         let d = new Date(result[i].date_time);
         let date = d.toLocaleDateString();
         let time = d.toLocaleTimeString();
-        // html += "<tr><td>" + date + " " + time + "</td><td>"
+        // "
         labels.push(date + ' ' + time);
         data.push(result[i][signal]);
+
+        html += "<tr><td>" + date + " " + time + "</td><td>"
       }
 
 
