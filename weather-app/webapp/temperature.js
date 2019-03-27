@@ -6,7 +6,7 @@ var drawTemperatureData = function(api) {
       console.log(result);
       let labels = [];
       let data = [];
-      let html = '<table class= "table table-striped"><thead><tr><th>Date</th><th>Time</th><th>Name</th><th>Value</th></tr></thead><tbody>';
+      let html = '<table class="table table-striped"><thead><tr><th>Date</th><th>Time</th><th>Name</th><th>Value</th></tr></thead><tbody>';
      
       for (let i = 0; i < result.length; i++){
         let d = new Date(result[i].date_time);
