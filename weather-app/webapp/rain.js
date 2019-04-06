@@ -1,5 +1,5 @@
-var drawTemperatureData = function(api) {
-    const signal = 'temperature';
+var drawRain = function(api) {
+    const signal = 'rain';
     const url = api + '/' + signal;
   
     $.getJSON(url, function (result) {
@@ -53,7 +53,7 @@ var drawTemperatureData = function(api) {
             labels: labels,
             type: 'time',
             datasets: [{
-              label: "Temperature",
+              label: "Rain",
               data: data,
               fill: false,
               borderColor: '#1E90FF'

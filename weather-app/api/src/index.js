@@ -80,8 +80,8 @@ weather.post(weatherPath, koaBody, async (ctx) => {
     client.release(); // release client back to pool
   }
 });
-
-weather.get(`${weatherPath}/:key`, async (ctx) => {
+// get by key and interval /:interval lisätty jälkikäteen
+weather.get(`${weatherPath}/:key/:interval`, async (ctx) => {
   const {
     key
   } = ctx.params;

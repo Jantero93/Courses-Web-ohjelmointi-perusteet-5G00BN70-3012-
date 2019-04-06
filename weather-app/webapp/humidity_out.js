@@ -1,5 +1,5 @@
-var drawTemperatureData = function(api) {
-    const signal = 'temperature';
+var drawHumidity_out = function(api) {
+    const signal = 'humidity_out';
     const url = api + '/' + signal;
   
     $.getJSON(url, function (result) {
@@ -53,7 +53,7 @@ var drawTemperatureData = function(api) {
             labels: labels,
             type: 'time',
             datasets: [{
-              label: "Temperature",
+              label: "Humidity out",
               data: data,
               fill: false,
               borderColor: '#1E90FF'

@@ -16,14 +16,19 @@
     <script src="latestData.js"></script>
     <script src="main.js"></script>
     <script src="temperature.js"></script>
+    <script src="humidity_out.js"></script>
+    <script src="rain.js"></script>
 
-  
+    <style>
+    
+     </style>
    
 </head>
 
-<body>
+<body>        
+
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#" id="home">Weather Station</a>
+        <a class="navbar-brand" href="#" id="home">Sääasema</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,15 +43,43 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="humidity_out">Humidity out</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="rain">Rain</a>
+                </li>
+
+                
+                         
+
             </ul>
         </div>
     </nav>
+
+   
 
     <div id="title_div"></div>
     <div id="chart_div">
         <canvas id="chart_canvas"></canvas>
     </div>
     <div id="data_div"> </div>
+
+    <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button">Action</button>
+              <button class="dropdown-item" type="button">Another action</button>
+              <button class="dropdown-item" type="button">Something else here</button>
+            </div>
+          </div>
+        
+
+    <div id="testi"><footer class="container-fluid;text-down" id="footer">Jani Sillanpää </footer>
+        
+     </div>
+
+    
+     
     
 </body>
 

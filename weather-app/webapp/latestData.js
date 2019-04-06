@@ -4,7 +4,7 @@ var printLatestData = function (api) {
     $.getJSON(api, function (result) {    
       // $("#data_div").html(JSON.stringify(result));
 
-      let html = "<table class='table table-striped'><thead><tr><th>Date</th><th>Time</th><th>Value</th></tr></thead><tbody>";
+      let html = "<table class='table table-striped'><thead><tr><th>Date</th><th>Signal</th><th>Value</th></tr></thead><tbody>";
 
       for (i = 0; i < result.length; i++) {
       //  let html = "<tr>"
@@ -15,7 +15,7 @@ var printLatestData = function (api) {
        
 
         for (name in result[i].data) {
-            html += name + "</td><td> " + result[i].data[name] + "</td>"
+            html += name + "</td><td> "  + result[i].data[name] + "</td>"
         }
         html += "</tr>";
 
