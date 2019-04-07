@@ -56,7 +56,7 @@ var drawRain = function(api) {
               label: "Rain",
               data: data,
               fill: false,
-              borderColor: '#1E90FF'
+              borderColor: '#228B22'
           }]
           },
           options: {

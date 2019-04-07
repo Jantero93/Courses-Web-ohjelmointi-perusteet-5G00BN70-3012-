@@ -55,8 +55,9 @@ var drawTemperatureData = function(api) {
             datasets: [{
               label: "Temperature",
               data: data,
-              fill: false,
+              fill: false,              
               borderColor: '#1E90FF'
+              
           }]
           },
           options: {
@@ -65,8 +66,10 @@ var drawTemperatureData = function(api) {
             scales: {
               yAxes: [
                 {
-                  ticks: {
-                    beginAtZero: false
+                  ticks: { 
+                    max: 30,
+                    min: -30
+                   // beginAtZero: false
                   }
                 }
               ]
