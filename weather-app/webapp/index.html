@@ -19,6 +19,7 @@
     <script src="humidity_out.js"></script>
     <script src="rain.js"></script>
 
+<!-- CSS -->
     <style>
 
      </style>
@@ -45,28 +46,44 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="rain">Rain</a>
-                </li>
-
-                
+                </li>               
                          
 
             </ul>
         </div>
     </nav>
 
-   
-
+  
+    <!--Tervetuloa sääasemalle otsikko-->
     <div id="title_div"></div>
 
+    <!--Tiputusvalikko--> 
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Aikaväli
+        </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <button class="dropdown-item" type="button">Live</button>
+              <button class="dropdown-item" type="button">24 h</button>
+              <button class="dropdown-item" type="button">48 h</button>
+              <button class="dropdown-item" type="button">72 h</button>
+              <button class="dropdown-item" type="button">1 vko</button>
+              <button class="dropdown-item" type="button">1 kk</button>
+          </div>
+   </div>
+         
+
+<!--Chartin ja data div rinnakkain-->
 <div class="row">
 
-    <div class="col">
+
+    <div class="col-sm-8">
     <div id="chart_div"  > 
         <canvas id="chart_canvas"></canvas>
     </div>
 </div>
 
-    <div class="col">
+    <div class="col-sm-4">
     <div id="data_div" ></div> </div>
         </div>
 
@@ -74,18 +91,8 @@
 
 
   
- <div class="dropdown">
-       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Dropdown
-       </button>
-           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-             <button class="dropdown-item" type="button">Action</button>
-             <button class="dropdown-item" type="button">Another action</button>
-             <button class="dropdown-item" type="button">Something else here</button>
-         </div>
-  </div>
-        
 
+    <!--Oma nimi-->
     <div id="testi"><footer class="container-fluid;text-down" id="footer">Jani Sillanpää </footer></div>
 
     
