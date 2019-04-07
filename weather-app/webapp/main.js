@@ -29,11 +29,11 @@ $(document).ready(function () {
         drawHumidity_out(api);
     });
 
-    $("#rain").click(function (e) {
-        $("#title_div").html("<h1>Rain</h1>")
+    $("#light").click(function (e) {
+        $("#title_div").html("<h1>Light</h1>")
         $("#data_div").html("")
         $("#chart_div").show()
-        drawRain(api);
+        drawLight(api);
     });
 
     $("#dropdownRain").click(function (e) {

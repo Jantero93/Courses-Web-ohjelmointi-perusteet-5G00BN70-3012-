@@ -1,5 +1,5 @@
-var drawRain = function(api) {
-    const signal = 'rain';
+var drawLight = function(api) {
+    const signal = 'light';
     const url = api + '/' + signal;
   
     $.getJSON(url, function (result) {
@@ -53,7 +53,7 @@ var drawRain = function(api) {
             labels: labels,
             type: 'time',
             datasets: [{
-              label: "Rain",
+              label: "Light",
               data: data,
               fill: false,
               borderColor: '#228B22'
