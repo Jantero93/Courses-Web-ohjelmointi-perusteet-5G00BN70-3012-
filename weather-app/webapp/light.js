@@ -6,9 +6,7 @@ var drawLight = function(api) {
       console.log(result);
       let labels = [];
       let data = [];
-     // let html = '<table class= "table table-striped"><thead><tr><th>Date</th><th>Time</th><th>Name</th><th>Value</th></tr></thead><tbody>';
      
-      // kopioidaan result ja käännetään omaan taulukkoon
       let result_copy = [...result];
       result_copy.reverse();
       
@@ -29,19 +27,7 @@ var drawLight = function(api) {
         let time = d.toLocaleTimeString(); 
         html += "<tr><td>" + date + "</td><td>" + time + "</td><td>" + signal + "</td><td>" + result_copy[i][signal] + "</td></tr>";
       }
-
-      /*
-
-      for (let i = 0; i < result.length; i++){
-        let d = new Date(result[i].date_time);
-        let date = d.toLocaleDateString();
-        let time = d.toLocaleTimeString();        
-        labels.push(date + ' ' + time);
-        data.push(result[i][signal]);
-        html += "<tr><td>" + date + "</td><td>" + time + "</td><td>" + name + "</td><td>" + result[i][signal] + "</td></tr>";
-       // html += "<tr><td>" + date + " " + time + "</td><td>"
-      }
-      */
+    
       html += "</tbody></table>";
       $("#data_div").html(html);
 

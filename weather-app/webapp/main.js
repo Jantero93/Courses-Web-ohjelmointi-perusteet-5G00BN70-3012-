@@ -1,10 +1,11 @@
 
 $(document).ready(function () {
     const api = "http://webapi19sa-1.course.tamk.cloud/v1/weather";
+    //muuttuja millä "sivulla" ollaan
     let current = "home";
 
     $("#title_div").html("<h1>Tervetuloa sääasemalle</h1>")
-    console.log("doc ready")
+    console.log(current)
 
     $("#interval_div").hide()
 
@@ -25,6 +26,7 @@ $(document).ready(function () {
         $("#chart_div").show()
         $("#interval_div").show()
         drawTemperatureData(api);
+       // current = "temperature";
     });
 
     $("#humidity_out").click(function (e) {
@@ -52,6 +54,8 @@ $(document).ready(function () {
     */
 
     $("#selectinterval").change(function() {
+        if(current == 'temperature')
+        $("#temperature").trigger("click");
         console.log($("#selectinterval").val());
     });
 
