@@ -66,10 +66,8 @@ var drawTemperatureData = function(api) {
             scales: {
               yAxes: [
                 {
-                  ticks: { 
-                    max: 30,
-                    min: -30
-                   // beginAtZero: false
+                  ticks: {                    
+                   beginAtZero: false
                   }
                 }
               ]

@@ -57,7 +57,8 @@
     <!--Tervetuloa sääasemalle otsikko-->
     <div id="title_div"></div>
 
-    <!--Tiputusvalikko--> 
+    
+    <!--Tiputusvalikko
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Aikaväli
@@ -71,11 +72,31 @@
               <button class="dropdown-item" type="button">1 kk</button>
           </div>
    </div>
+</div>
+
+-->
          
+
+   <!-- Opettajan dropvalikko-->
+
+<div id="interval_div" href="#">
+
+   <select id="selectinterval">       
+    <option href="#" id="live" value="live"> Live</option>
+    <option href="#" id="24h" value="24h">24 h</option>
+    <option value="48h">48 h</option>
+    <option value="1week">1 week</option>
+    <option value="1month">1 month</option>
+  </select>
+
+</div> 
+
 
 <!--Chartin ja data div rinnakkain-->
 
+
 <div class="container-fluid">
+    
 <div class="row">
 
     <div class="col-8">
@@ -85,9 +106,13 @@
 
 </div>
 
+
+
+
+
     <div class="col-4">
         <div id="data_div" ></div>
-    </div>
+    </div>    
        
  </div>
 
