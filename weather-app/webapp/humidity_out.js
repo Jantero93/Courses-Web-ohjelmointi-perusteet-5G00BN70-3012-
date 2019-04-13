@@ -30,18 +30,7 @@ var drawHumidity_out = function(api) {
         html += "<tr><td>" + date + "</td><td>" + time + "</td><td>" + signal + "</td><td>" + result_copy[i][signal] + "</td></tr>";
       }
 
-      /*
-
-      for (let i = 0; i < result.length; i++){
-        let d = new Date(result[i].date_time);
-        let date = d.toLocaleDateString();
-        let time = d.toLocaleTimeString();        
-        labels.push(date + ' ' + time);
-        data.push(result[i][signal]);
-        html += "<tr><td>" + date + "</td><td>" + time + "</td><td>" + name + "</td><td>" + result[i][signal] + "</td></tr>";
-       // html += "<tr><td>" + date + " " + time + "</td><td>"
-      }
-      */
+     
       html += "</tbody></table>";
       $("#data_div").html(html);
 

@@ -3,8 +3,22 @@
 
 <head>
     <meta charset="utf-8">
+
+
+
     <title>Sääasema</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- sääikonit -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+
+
+
+
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,9 +34,27 @@
     <script src="light.js"></script>
 
 <!-- CSS -->
-    <style>
 
-     </style>
+<style>
+
+.boxtext {
+    height: 125px;
+    line-height: 110px;
+    text-align: center;
+    color: lightgrey;
+    font-size: 200%;
+    
+}
+
+.box1 {
+  background-color:#343a40;  
+  width: 160px;
+  height: 125px;
+  margin: 5px;
+  float: left;    
+}
+
+</style>
    
 </head>
 
@@ -57,8 +89,37 @@
     <!--Tervetuloa sääasemalle otsikko-->
     <div id="title_div"></div>
 
+
+
+    <!--Sub otsikko-->
+    
+
+    <!--Viimeisimmät mittaukset lootat-->
+
+    <div id="lastbox" href="#">        
+
+        <div class="container-fluid">
+            <div class="row">
+
+            
+                <div class="box1" class="col-2">
+                    <div class="boxtext">99 °C</div>
+                </div>
+
+                <div class="box1" class="col-2">
+                    <div class="boxtext">100 % </div>
+                </div>
+
+                <div class="box1" class="col-2">
+                    <div class="boxtext"> 4000 </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
     <!-- Dropdown valikko (oma)-->
-   <div id="interval_div" href="#">
+   <div id="interval_div" href="#">       
 
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

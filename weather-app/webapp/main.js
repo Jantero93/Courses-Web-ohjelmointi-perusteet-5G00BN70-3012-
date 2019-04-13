@@ -8,6 +8,9 @@ $(document).ready(function () {
     console.log(current)
 
     $("#interval_div").hide()
+    
+    //viimeisimmät boxit
+    $("lastbox").show();
 
     $("#home").click(function (e) {
         location.reload();        
@@ -16,7 +19,8 @@ $(document).ready(function () {
     $("#last_values").click(function (e) {
         $("#title_div").html("<h1>Last 500 measurements</h1>")
         $("#chart_div").hide()
-        $("#interval_div").hide()        
+        $("#interval_div").hide()  
+        $("#lastbox").hide()      
         printLatestData(api);
     });
 
@@ -26,6 +30,7 @@ $(document).ready(function () {
         $("#chart_div").show()
         $("#interval_div").show()
         drawTemperatureData(api);
+        $("#lastbox").hide()
        // current = "temperature";
     });
 
@@ -35,12 +40,14 @@ $(document).ready(function () {
         $("#chart_div").show()
         drawHumidity_out(api);
         $("#interval_div").show()
+        $("#lastbox").hide
     });
 
     $("#light").click(function (e) {
         $("#title_div").html("<h1>Light</h1>")
         $("#data_div").html("")
         $("#chart_div").show()
+        $("#lastbox").hide
         drawLight(api);
     });
     /*
