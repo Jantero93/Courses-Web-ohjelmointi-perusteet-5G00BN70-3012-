@@ -65,6 +65,12 @@ position: relative;
 left: 10px;
 }
 
+.signature {
+   position:relative;
+   bottom: 5px;
+   left: 10px;
+}
+
 </style>
    
 </head>
@@ -104,67 +110,6 @@ left: 10px;
     <div id="title_div"></div>
 
 
-
-    <!--Sub otsikko-->
-    
-
-    <!--Viimeisimmät mittaukset lootat-->
-
-    <!--
-    <div id="lastbox" href="#">        
-
-        <div class="container-fluid">
-            <div class="row">
-
-            
-                <div class="box1" class="col-2">
-                    <div class="boxtext1">99 °C</div>
-                </div>
-
-                <div class="box1" class="col-2">
-                    <div class="boxtext2">100 % </div>
-                </div>
-
-                <div class="box1" class="col-2">
-                    <div class="boxtext3"> 4000 </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
--->
-
-
-
-    <!-- Dropdown valikko (oma)-->
-
-
-<!--
-
-<div id="interval_div" href="#">       
-
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Aikaväli
-        </button>
-            <div class="dropdown-menu"  id="selectinterval" aria-labelledby="dropdownMenu1">
-              <button class="dropdown-item" id="Live" type="button">Live</button>
-              <button class="dropdown-item" id="24" type="button">24 h</button>
-              <button class="dropdown-item" id="48" type="button">48 h</button>
-              <button class="dropdown-item" id="168" type="button">1 vko</button>
-              <button class="dropdown-item" id="672" type="button">1 kk</button>
-            </div>
-   </div>
-</div>
-
-</div>
-
--->
-
-
-
 <div id="interval_div" class="dropdown1" href="#">
   Aikaväli
 
@@ -197,32 +142,26 @@ Signaali
 <!--Chartin ja data div rinnakkain-->
 
 
-<div class="container-fluid">
-    
-<div class="row">
+<div class="container-fluid">    
+    <div class="row">
 
-    <div class="col-8">
-        <div id="chart_div"> 
-        <canvas id="chart_canvas"></canvas>
-    </div>
-
-</div>
+        <div class="col-8">
+            <div id="chart_div"> 
+                <canvas id="chart_canvas"></canvas>
+            </div>
+        </div>
 
 
-
-
-
-    <div class="col-4">
-        <div id="data_div" ></div>
-    </div>    
+        <div class="col-4">
+            <div id="data_div" ></div>
+        </div>    
        
- </div>
-
+    </div>
 </div>
  
 
     <!--Oma nimi-->
-    <div id="testi"><footer class="container-fluid;text-down" id="footer">JS </footer></div>
+    <div id="testi" class="signature"><footer>Jani </footer></div>
 
     
      

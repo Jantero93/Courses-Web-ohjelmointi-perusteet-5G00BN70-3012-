@@ -7,7 +7,6 @@ var drawHumidity_out = function(api) {
       console.log(result);
       let labels = [];
       let data = [];
-     // let html = '<table class= "table table-striped"><thead><tr><th>Date</th><th>Time</th><th>Name</th><th>Value</th></tr></thead><tbody>';
      
       // kopioidaan result ja käännetään omaan taulukkoon
       let result_copy = [...result];
@@ -46,9 +45,9 @@ var drawHumidity_out = function(api) {
               label: "Humidity out",
               data: data,
               backgroundColor: '#C704B5',
-              fill: false,
+              fill: true,
               
-              borderColor: '#C704B5'
+              borderColor: '#181819'
           }]
           },
           options: {

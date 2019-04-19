@@ -3,15 +3,15 @@ $(document).ready(function () {
     const api = "http://webapi19sa-1.course.tamk.cloud/v1/weather";
     //muuttuja millä "sivulla" ollaan
     let current = "home";
-    //muuttuja interval valikon arvoille
     
+    //Otsikko
+    $("#title_div").html("<h1>Tervetuloa sääasemalle</h1>")  
     
-
-    $("#title_div").html("<h1>Tervetuloa sääasemalle</h1>")
-   // console.log(current)
+    //Aikaväli
     console.log($("#selectinterval"));
-
     $("#interval_div").hide()
+
+    //Vapaa valinta
     $("#free_div").hide()
     
 
@@ -106,7 +106,6 @@ $(document).ready(function () {
         }
         
     });
-
    
 
 });
