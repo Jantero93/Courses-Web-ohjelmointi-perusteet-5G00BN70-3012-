@@ -38,15 +38,17 @@ var drawHumidity_out = function(api) {
 
       let ctx = document.getElementById("chart_canvas").getContext("2d");
         let myChart = new Chart(ctx, {
-          type: "line",
+          type: 'bar',
           data: {
             labels: labels,
             type: 'time',
             datasets: [{
               label: "Humidity out",
               data: data,
+              backgroundColor: '#C704B5',
               fill: false,
-              borderColor: '#DE05C9'
+              
+              borderColor: '#C704B5'
           }]
           },
           options: {
