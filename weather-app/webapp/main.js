@@ -30,7 +30,7 @@ $(document).ready(function () {
         $("#interval_div").hide()  
         $("#lastbox").hide()      
         printLatestData(api);
-        
+                
     });
 
     $("#temperature").click(function () {

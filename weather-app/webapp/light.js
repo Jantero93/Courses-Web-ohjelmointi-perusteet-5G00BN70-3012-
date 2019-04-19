@@ -44,7 +44,7 @@ var drawLight = function(api) {
               label: "Light",
               data: data,
               fill: false,
-              borderColor: '#228B22'
+              borderColor: '#56FF74'
           }]
           },
           options: {

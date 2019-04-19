@@ -59,7 +59,7 @@ var drawTemperatureData = function(api) {
               label: "Temperature",
               data: data,
               fill: false,              
-              borderColor: '#1E90FF'
+              borderColor: '#343a40'
               
           }]
           },

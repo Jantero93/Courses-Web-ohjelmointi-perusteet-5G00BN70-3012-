@@ -55,6 +55,15 @@
   float: left;    
 }
 
+.space {
+    margin: 10px;
+}
+
+.dropdown1 {
+position: relative;
+left: 10px;
+}
+
 </style>
    
 </head>
@@ -151,23 +160,26 @@
 
 -->
 
-    
 
-<div id="interval_div" href="#">
-Aikaväli
+
+<div id="interval_div" class="dropdown1" href="#">
+  Aikaväli
+
    <select id="selectinterval">       
-    <option value=""> Live</option>
+    <option value="">Nyt</option>
     <option value="24">24 h</option>
     <option value="48">48 h</option>
-    <option value="168">1 week</option>
-    <option value="672">1 month</option>
+    <option value="168">1 vko</option>
+    <option value="672">1 kk</option>
   </select>
 
 </div> 
 
-<div id="free_div" href="#">
+<div class="space"></div>
+
+<div id="free_div" class="dropdown1" href="#">
 Signaali
-    <select id="freevalinta">
+    <select id="freevalinta" class="dropdown">
         <option value="rain"> Sade</option>
         <option value="wind_speed">Tuulennopeus</option>
         <option value="Air_pres_1">Ilmanpaine</option>
@@ -203,10 +215,7 @@ Signaali
  </div>
 
 </div>
-
-
-
-  
+ 
 
     <!--Oma nimi-->
     <div id="testi"><footer class="container-fluid;text-down" id="footer">JS </footer></div>
