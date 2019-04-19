@@ -1,6 +1,8 @@
 var drawLight = function(api) {
+
+    const interval = $("#selectinterval").val();
     const signal = 'light';
-    const url = api + '/' + signal;
+    const url = api + '/' + signal + '/' + interval;
   
     $.getJSON(url, function (result) {
       console.log(result);

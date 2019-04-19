@@ -1,6 +1,7 @@
 var drawHumidity_out = function(api) {
+    const interval = $("#selectinterval").val();
     const signal = 'humidity_out';
-    const url = api + '/' + signal;
+    const url = api + '/' + signal + '/' + interval;
   
     $.getJSON(url, function (result) {
       console.log(result);
@@ -45,7 +46,7 @@ var drawHumidity_out = function(api) {
               label: "Humidity out",
               data: data,
               fill: false,
-              borderColor: '#1E90FF'
+              borderColor: '#DE05C9'
           }]
           },
           options: {

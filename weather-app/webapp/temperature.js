@@ -1,6 +1,9 @@
 var drawTemperatureData = function(api) {
-    const signal = 'temperature';
-    const url = api + '/' + signal;
+    
+    const interval = $("#selectinterval").val();
+    const signal = 'temperature';    
+    const url = api + '/' + signal + '/' + interval;
+    
   
     $.getJSON(url, function (result) {
       console.log(result);
