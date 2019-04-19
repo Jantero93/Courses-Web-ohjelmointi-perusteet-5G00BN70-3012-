@@ -12,6 +12,7 @@ $(document).ready(function () {
     console.log($("#selectinterval"));
 
     $("#interval_div").hide()
+    $("#free_div").hide()
 
     
     //viimeisimmät boxit
@@ -23,6 +24,7 @@ $(document).ready(function () {
 
     $("#last_values").click(function (e) {
         current = "last_values";
+        $("#free_div").hide()
         $("#title_div").html("<h1>Last 500 measurements</h1>")
         $("#chart_div").hide()
         $("#interval_div").hide()  
@@ -33,7 +35,7 @@ $(document).ready(function () {
 
     $("#temperature").click(function () {
         current = "temperature";
-
+        $("#free_div").hide()
         $("#interval_div").show()
         $("#title_div").html("<h1>Temperature</h1>")
         $("#data_div").show()
@@ -45,7 +47,7 @@ $(document).ready(function () {
 
     $("#humidity_out").click(function (e) {
         current = "humidity_out";
-        
+        $("#free_div").hide()
         $("#interval_div").show()
         $("#title_div").html("<h1>Humidity out</h1>")
         $("#data_div").show()
@@ -56,7 +58,7 @@ $(document).ready(function () {
 
     $("#light").click(function (e) {
         current = "light";
-
+        $("#free_div").hide()
         $("#interval_div").show()
         $("#title_div").html("<h1>Light</h1>")
         $("#data_div").show()
@@ -65,17 +67,23 @@ $(document).ready(function () {
         
     });
 
-    /*
-    $("#24h").click(function (e) {
-        $("#title_div").html("<h1>rain</h1>")
-        $("#data_div").html("")
-        $("#chart_div").show()
-        drawLight(api);
-        
-    }); 
-    */
+    $("#free").click(function () {
+        current = "free"
+        $("#title_div").html("<h1>Vapaa valinta</h1>")
+        $("#interval_div").show()
+        $("#free_div").show()
+        $("data_div").show()
+        $("chart_div").show()
+        free(api)
+    });
 
-    // interval = $("#selectinterval").val();
+
+    $("#freevalinta").change(function () {
+        if (current == 'free') {
+            $("#free").trigger("click");
+        }
+
+    });    
 
     $("#selectinterval").change(function() {
         
@@ -90,10 +98,12 @@ $(document).ready(function () {
         if(current == 'humidity_out') {
             $("#humidity_out").trigger("click");
         }
+
+        if(current == 'free') {
+            $("#free").trigger("click");
+        }
         
     });
-
-   
 
    
 

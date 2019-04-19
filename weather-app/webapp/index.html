@@ -32,6 +32,7 @@
     <script src="temperature.js"></script>
     <script src="humidity_out.js"></script>
     <script src="light.js"></script>
+    <script src="free.js"></script>
 
 <!-- CSS -->
 
@@ -78,7 +79,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="light">Light</a>
-                </li>               
+                </li>             
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="free">Vapaa valinta</a>
+                </li>  
                          
 
             </ul>
@@ -150,7 +154,7 @@
     
 
 <div id="interval_div" href="#">
-
+Aikaväli
    <select id="selectinterval">       
     <option value=""> Live</option>
     <option value="24">24 h</option>
@@ -160,6 +164,18 @@
   </select>
 
 </div> 
+
+<div id="free_div" href="#">
+Signaali
+    <select id="freevalinta">
+        <option value="rain"> Sade</option>
+        <option value="wind_speed">Tuulennopeus</option>
+        <option value="Air_pres_1">Ilmanpaine</option>
+        <option value="humidity_in">Sisäkosteus</option>
+
+    </select>
+
+</div>
 
 
 <!--Chartin ja data div rinnakkain-->
