@@ -13,12 +13,11 @@ $(document).ready(function () {
 
     $("#interval_div").hide()
     $("#free_div").hide()
-    lastfront(api); 
+    
 
     
     $("#home").click(function (e) {
-        location.reload();  
-        lastfront(api);      
+        location.reload();            
     });
 
     $("#last_values").click(function (e) {
