@@ -3,6 +3,17 @@ var drawLight = function(api) {
     const interval = $("#selectinterval").val();
     const signal = 'light';
     const url = api + '/' + signal + '/' + interval;
+
+    const rndcolor = $("#random").val();
+    let color = '#1E90FF'   
+
+    if (rndcolor == 'true') {
+      color = '#'+(Math.random()*0xFFFFFF<<0).toString(16)
+    }
+    
+    if (rndcolor == 'false') {
+      color = '#1E90FF'
+    }
   
     $.getJSON(url, function (result) {
       console.log(result);
@@ -44,7 +55,7 @@ var drawLight = function(api) {
               label: "Light",
               data: data,
               fill: false,
-              borderColor: '#56FF74'
+              borderColor: color
           }]
           },
           options: {

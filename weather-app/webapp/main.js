@@ -13,12 +13,15 @@ $(document).ready(function () {
 
     //Vapaa valinta
     $("#free_div").hide()
+    //Satunnainen väri
+    $("#randomColor").hide()
+    
     
 
     
     $("#home").click(function (e) {
-        location.reload();            
-    });
+        location.reload();                  
+    });   
 
     $("#last_values").click(function (e) {
         current = "last_values";
@@ -26,7 +29,8 @@ $(document).ready(function () {
         $("#free_div").hide()
         $("#title_div").html("<h1>Last 500 measurements</h1>")
         $("#chart_div").hide()
-        $("#interval_div").hide()           
+        $("#interval_div").hide() 
+        $("#randomColor").hide()          
         printLatestData(api);
                 
     });
@@ -38,7 +42,8 @@ $(document).ready(function () {
         $("#interval_div").show()
         $("#title_div").html("<h1>Temperature</h1>")
         $("#data_div").show()
-        $("#chart_div").show()        
+        $("#chart_div").show()  
+        $("#randomColor").show()      
         drawTemperatureData(api);
         
        
@@ -51,7 +56,8 @@ $(document).ready(function () {
         $("#interval_div").show()
         $("#title_div").html("<h1>Humidity out</h1>")
         $("#data_div").show()
-        $("#chart_div").show()          
+        $("#chart_div").show()   
+        $("#randomColor").show()            
         drawHumidity_out(api);
         
     });
@@ -63,7 +69,8 @@ $(document).ready(function () {
         $("#interval_div").show()
         $("#title_div").html("<h1>Light</h1>")
         $("#data_div").show()
-        $("#chart_div").show()           
+        $("#chart_div").show()      
+        $("#randomColor").show()          
         drawLight(api);
         
     });
@@ -76,7 +83,8 @@ $(document).ready(function () {
         $("#free_div").show()
         $("data_div").show()
         $("chart_div").show()
-        free(api)
+        $("#randomColor").show()     
+        free(api);
     });
 
 

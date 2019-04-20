@@ -3,6 +3,18 @@ var drawTemperatureData = function(api) {
     const interval = $("#selectinterval").val();
     const signal = 'temperature';    
     const url = api + '/' + signal + '/' + interval;
+
+
+    const rndcolor = $("#random").val();
+    let color = '#1E90FF'   
+
+    if (rndcolor == 'true') {
+      color = '#'+(Math.random()*0xFFFFFF<<0).toString(16)
+    }
+    
+    if (rndcolor == 'false') {
+      color = '#1E90FF'
+    }
     
   
     $.getJSON(url, function (result) {
@@ -47,7 +59,7 @@ var drawTemperatureData = function(api) {
               label: "Temperature",
               data: data,
               fill: false,              
-              borderColor: '#343a40'
+              borderColor: color
               
           }]
           },
