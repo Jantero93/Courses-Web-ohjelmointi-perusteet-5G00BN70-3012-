@@ -5,7 +5,7 @@ $(document).ready(function () {
     let current = "home";
     
     //Otsikko
-    $("#title_div").html("<h1>Tervetuloa sääasemalle</h1>")  
+    $("#title_div").html("<h1>Sääasema</h1>")  
     
     //Aikaväli
     console.log($("#selectinterval"));
@@ -18,7 +18,10 @@ $(document).ready(function () {
     $("#data500").hide()
     $("#chart_div").hide()
     
+    //Etusivun viimeiset arvot
+    viimeset(api);
 
+    
     
     $("#home").click(function (e) {
         location.reload();                  
@@ -32,6 +35,7 @@ $(document).ready(function () {
         $("#chart_div").hide()
         $("#interval_div").hide() 
         $("#randomColor").hide()  
+        $("#latest").hide()
         $("#data500").show()
         $("#data_div").hide()        
         printLatestData(api);
@@ -48,6 +52,7 @@ $(document).ready(function () {
         $("#chart_div").show()  
         $("#randomColor").show()     
         $("#data500").hide() 
+        $("#latest").hide()
         drawTemperatureData(api);
         
        
@@ -62,7 +67,8 @@ $(document).ready(function () {
         $("#data_div").show()
         $("#chart_div").show()   
         $("#randomColor").show()    
-        $("#data500").hide()        
+        $("#data500").hide()   
+        $("#latest").hide()     
         drawHumidity_out(api);
         
     });
@@ -76,7 +82,8 @@ $(document).ready(function () {
         $("#data_div").show()
         $("#chart_div").show()      
         $("#randomColor").show()   
-        $("#data500").hide()       
+        $("#data500").hide()   
+        $("#latest").hide()    
         drawLight(api);
         
     });
@@ -91,6 +98,7 @@ $(document).ready(function () {
         $("#chart_div").show()
         $("#randomColor").show()  
         $("#data500").hide()   
+        $("#latest").hide()
         free(api);
     });
 

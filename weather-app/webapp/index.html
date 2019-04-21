@@ -33,15 +33,16 @@
     <script src="humidity_out.js"></script>
     <script src="light.js"></script>
     <script src="free.js"></script>
+    <script src="onedata.js"></script>
     
 
 <!-- CSS -->
 
 <style>
-
+    
 .otsikko {
     position: relative;
-    left: 5px;  
+    left: 8px;  
 }
 
 .dropdown1 {
@@ -60,6 +61,25 @@ body {
 .space {
     margin: 10px;
 }
+
+.infotaulu {
+    font-family: 'Courier';
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    left:  10px;
+    border-width: 1px;
+    
+}
+
+span {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    left: 5px;
+    position: static;
+}
+
 
 
 
@@ -97,10 +117,61 @@ body {
             </ul>
         </div>
     </nav>
-
+ 
   
     <!--Tervetuloa sääasemalle otsikko-->
     <div id="title_div" class="otsikko"></div>
+
+    
+
+
+    
+    <div id="latest" class="infotaulu">
+
+            
+    
+    
+
+    <div class="col-2">
+        <br></br>
+
+       <span> Viimeisimmät mittaukset:</span>
+
+        <br></br>
+
+       <div id="latest1" class="latestinfo1"></div>
+     </div>
+
+     <div class="space"></div>
+
+     
+
+     <div class="col-2">
+            <div id="latest2" class="latestinfo2"></div>
+     </div>
+
+     <div class="space"></div>
+
+     <div class="col-2">
+         <div id="latest3" class="latestinfo3"></div>
+    </div>
+
+
+    <div class="space"></div>
+
+     <div class="col-2">
+         <div id="latest4" class="latestinfo4"></div>
+       </div>
+
+        
+    </div>
+    
+             
+
+
+
+
+
 
 
 <div id="interval_div" class="dropdown1" href="#">
