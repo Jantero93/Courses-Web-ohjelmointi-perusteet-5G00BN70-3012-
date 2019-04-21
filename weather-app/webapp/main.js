@@ -15,7 +15,8 @@ $(document).ready(function () {
     $("#free_div").hide()
     //Satunnainen väri
     $("#randomColor").hide()
-    
+    $("#data500").hide()
+    $("#chart_div").hide()
     
 
     
@@ -30,7 +31,9 @@ $(document).ready(function () {
         $("#title_div").html("<h1>Last 500 measurements</h1>")
         $("#chart_div").hide()
         $("#interval_div").hide() 
-        $("#randomColor").hide()          
+        $("#randomColor").hide()  
+        $("#data500").show()
+        $("#data_div").hide()        
         printLatestData(api);
                 
     });
@@ -43,7 +46,8 @@ $(document).ready(function () {
         $("#title_div").html("<h1>Temperature</h1>")
         $("#data_div").show()
         $("#chart_div").show()  
-        $("#randomColor").show()      
+        $("#randomColor").show()     
+        $("#data500").hide() 
         drawTemperatureData(api);
         
        
@@ -57,7 +61,8 @@ $(document).ready(function () {
         $("#title_div").html("<h1>Humidity out</h1>")
         $("#data_div").show()
         $("#chart_div").show()   
-        $("#randomColor").show()            
+        $("#randomColor").show()    
+        $("#data500").hide()        
         drawHumidity_out(api);
         
     });
@@ -70,7 +75,8 @@ $(document).ready(function () {
         $("#title_div").html("<h1>Light</h1>")
         $("#data_div").show()
         $("#chart_div").show()      
-        $("#randomColor").show()          
+        $("#randomColor").show()   
+        $("#data500").hide()       
         drawLight(api);
         
     });
@@ -83,7 +89,8 @@ $(document).ready(function () {
         $("#free_div").show()
         $("data_div").show()
         $("chart_div").show()
-        $("#randomColor").show()     
+        $("#randomColor").show()  
+        $("#data500").hide()   
         free(api);
     });
 

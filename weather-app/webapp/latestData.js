@@ -26,7 +26,7 @@ var printLatestData = function (api) {
 
      html += "</tbody></table>";
 
-      $("#data_div").html(html);
+      $("#data500").html(html);
 
     });
 

@@ -39,6 +39,19 @@
 
 <style>
 
+.otsikko {
+    position: relative;
+    left: 5px;    
+}
+
+.tilasto {
+    background-color: #FAFAFA;
+}
+
+body {    
+    background: url("fabric.png")
+}
+
 .boxtext {
     height: 125px;
     line-height: 110px;
@@ -65,11 +78,6 @@ position: relative;
 left: 10px;
 }
 
-.signature {
-   position:relative;
-   bottom: 5px;
-   left: 10px;
-}
 
 </style>
    
@@ -107,12 +115,11 @@ left: 10px;
 
   
     <!--Tervetuloa sääasemalle otsikko-->
-    <div id="title_div"></div>
+    <div id="title_div" class="otsikko"></div>
 
 
 <div id="interval_div" class="dropdown1" href="#">
-  Aikaväli
-
+    Aikaväli
    <select id="selectinterval">       
     <option value="">Nyt</option>
     <option value="24">24 h</option>
@@ -127,7 +134,7 @@ left: 10px;
 <div class="space"></div>
 
 <div id="free_div" class="dropdown1" href="#">
-Signaali
+    Signaali
     <select id="freevalinta" class="dropdown">
         <option value="rain"> Sade</option>
         <option value="wind_speed">Tuulennopeus</option>
@@ -156,19 +163,21 @@ Signaali
 
 <!--Chartin ja data div rinnakkain-->
 
+<div id="data500" class="tilasto"></div>
+
 
 <div class="container-fluid">    
     <div class="row">
 
         <div class="col-8">
-            <div id="chart_div"> 
+            <div id="chart_div" class="tilasto"> 
                 <canvas id="chart_canvas"></canvas>
             </div>
         </div>
 
 
         <div class="col-4">
-            <div id="data_div" ></div>
+            <div id="data_div" class="tilasto" ></div>
         </div>    
        
     </div>
@@ -176,8 +185,9 @@ Signaali
  
 
     <!--Oma nimi-->
+    <!--
     <div id="testi" class="signature"><footer>Jani </footer></div>
-
+    -->
     
      
     
