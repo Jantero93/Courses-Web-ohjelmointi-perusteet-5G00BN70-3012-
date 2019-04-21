@@ -87,8 +87,8 @@ $(document).ready(function () {
         $("#title_div").html("<h1>Vapaa valinta</h1>")
         $("#interval_div").show()
         $("#free_div").show()
-        $("data_div").show()
-        $("chart_div").show()
+        $("#data_div").show()
+        $("#chart_div").show()
         $("#randomColor").show()  
         $("#data500").hide()   
         free(api);

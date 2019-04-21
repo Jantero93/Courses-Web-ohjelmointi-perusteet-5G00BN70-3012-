@@ -41,7 +41,12 @@
 
 .otsikko {
     position: relative;
-    left: 5px;    
+    left: 5px;  
+}
+
+.dropdown1 {
+position: relative;
+left:10px;
 }
 
 .tilasto {
@@ -52,31 +57,11 @@ body {
     background: url("fabric.png")
 }
 
-.boxtext {
-    height: 125px;
-    line-height: 110px;
-    text-align: center;
-    color: lightgrey;
-    font-size: 200%;
-    
-}
-
-.box1 {
-  background-color:#343a40;  
-  width: 160px;
-  height: 125px;
-  margin: 5px;
-  float: left;    
-}
-
 .space {
     margin: 10px;
 }
 
-.dropdown1 {
-position: relative;
-left: 10px;
-}
+
 
 
 </style>
@@ -143,9 +128,6 @@ left: 10px;
 
     </select>
 
-
-
-
 </div>
 
 <div class="space"></div>
@@ -163,7 +145,9 @@ left: 10px;
 
 <!--Chartin ja data div rinnakkain-->
 
-<div id="data500" class="tilasto"></div>
+<div class="container-fluid">
+    <div id="data500" class="tilasto"></div>
+</div>
 
 
 <div class="container-fluid">    
@@ -181,14 +165,7 @@ left: 10px;
         </div>    
        
     </div>
-</div>
- 
-
-    <!--Oma nimi-->
-    <!--
-    <div id="testi" class="signature"><footer>Jani </footer></div>
-    -->
-    
+</div>  
      
     
 </body>
