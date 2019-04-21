@@ -94,7 +94,7 @@ $(document).ready(function () {
         free(api);
     });
 
-
+    //Vaihtaa haluttuun signaalin kun valitsee
     $("#freevalinta").change(function () {
         if (current == 'free') {
             $("#free").trigger("click");
@@ -102,6 +102,7 @@ $(document).ready(function () {
 
     });    
 
+    //Vaihda intervalia kun valitsee
     $("#selectinterval").change(function() {
         
         if(current == 'temperature') {
@@ -120,6 +121,27 @@ $(document).ready(function () {
             $("#free").trigger("click");
         }
         
+    });
+
+    //Vaihda väriä kun valitsee
+    $("#random").change(function() {
+
+        if(current == 'temperature') {
+            $("#temperature").trigger("click");
+        }
+
+        if(current == 'light') {
+            $("#light").trigger("click");
+        }
+
+        if(current == 'humidity_out') {
+            $("#humidity_out").trigger("click");
+        }
+
+        if(current == 'free') {
+            $("#free").trigger("click");
+        }
+
     });
    
 
