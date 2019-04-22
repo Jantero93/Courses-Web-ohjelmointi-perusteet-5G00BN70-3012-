@@ -60,7 +60,7 @@ var viimeset = function(api) {
         
         console.log(result[19]["wind_speed"]);
 
-        html2+= "<p2> Tuulennopeus: " + Math.round(result[19]["wind_speed"]) + " m/s</p2><br></br>";
+        html2+= "<p2> Tuulen nopeus: " + Math.round(result[19]["wind_speed"]) + " m/s</p2><br></br>";
 
 
         $("#latest2").html(html2);
