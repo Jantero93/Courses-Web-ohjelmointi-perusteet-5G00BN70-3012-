@@ -1,5 +1,5 @@
 variables:
-  REMOTE_HOST: deploy@172.16.7.83
+  REMOTE_HOST: deploy@web-ohjelmointi-301242
   REMOTE_DIR: weather-app
 
 stages:
